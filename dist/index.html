@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <title>Yuvacracy</title>
+    <script type="module" crossorigin src="/assets/index-f50751d8.js"></script>
+    <link rel="stylesheet" href="/assets/index-d3e7f29b.css">
+  </head>
+  <body>
+    <div
+      id="loader"
+      class="fixed mt-[-4rem] flex justify-center items-center z-[10] w-[100%] h-[100vh] bg-[#fff] overflow-hidden"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 128 128"
+        height="128px"
+        width="128px"
+        class="pl"
+      >
+        <circle
+          stroke-dashoffset="-376.4"
+          stroke-dasharray="377 377"
+          stroke-linecap="round"
+          transform="rotate(-90,64,64)"
+          stroke-width="8"
+          stroke="hsl(3,90%,55%)"
+          fill="none"
+          r="60"
+          cy="64"
+          cx="64"
+          class="pl__ring1"
+        ></circle>
+        <circle
+          stroke-dashoffset="-329.3"
+          stroke-dasharray="329.9 329.9"
+          stroke-linecap="round"
+          transform="rotate(-90,64,64)"
+          stroke-width="7"
+          stroke="hsl(13,90%,55%)"
+          fill="none"
+          r="52.5"
+          cy="64"
+          cx="64"
+          class="pl__ring2"
+        ></circle>
+        <circle
+          stroke-dashoffset="-288.6"
+          stroke-dasharray="289 289"
+          stroke-linecap="round"
+          transform="rotate(-90,64,64)"
+          stroke-width="6"
+          stroke="hsl(23,90%,55%)"
+          fill="none"
+          r="46"
+          cy="64"
+          cx="64"
+          class="pl__ring3"
+        ></circle>
+        <circle
+          stroke-dashoffset="-254"
+          stroke-dasharray="254.5 254.5"
+          stroke-linecap="round"
+          transform="rotate(-90,64,64)"
+          stroke-width="5"
+          stroke="hsl(33,90%,55%)"
+          fill="none"
+          r="40.5"
+          cy="64"
+          cx="64"
+          class="pl__ring4"
+        ></circle>
+        <circle
+          stroke-dashoffset="-225.8"
+          stroke-dasharray="226.2 226.2"
+          stroke-linecap="round"
+          transform="rotate(-90,64,64)"
+          stroke-width="4"
+          stroke="hsl(43,90%,55%)"
+          fill="none"
+          r="36"
+          cy="64"
+          cx="64"
+          class="pl__ring5"
+        ></circle>
+        <circle
+          stroke-dashoffset="-203.9"
+          stroke-dasharray="204.2 204.2"
+          stroke-linecap="round"
+          transform="rotate(-90,64,64)"
+          stroke-width="3"
+          stroke="hsl(53,90%,55%)"
+          fill="none"
+          r="32.5"
+          cy="64"
+          cx="64"
+          class="pl__ring6"
+        ></circle>
+      </svg>
+    </div>
+    <!-- programmes section  -->
+    <section
+      class="programme w-[100%] md_phone:mt-[4rem] mt-[2rem] flex flex-col justify-center"
+    >
+      <h3
+        class="font-[800] text-primary_1 md_phone:text-[.85rem] text-[.7rem] text-center"
+      >
+        Equipping Youth with Skills, Opportunities, and Confidence
+      </h3>
+      <h2
+        class="text-primary font-Lora font-[800] sm:text-[2.5rem] md_phone:text-[1.8rem] text-[1.8rem] text-center"
+      >
+        Empowerment <span class="text-primary_2">Programs</span> for Youth
+      </h2>
+      <img
+        class="sm:w-[18rem] md_phone:w-[13rem] w-[10rem] mx-auto mt-[.1rem] pointer-events-none"
+        src="/assets/fancy-border.svg"
+        alt=""
+        srcset=""
+      />
+
+      <div
+        class="flex w-[100%] justify-center gap-[0rem] md_phone:mt-[3rem] mt-[1.3rem]"
+      >
+        <button
+          id="upcomingBtn"
+          class="font-dm_sans text-[.9rem] tracking-[.8px] rounded-l-[.4rem] px-[.9rem] w-[8rem] border-[1px] border-primary h-[2.7rem] bg-primary text-white"
+        >
+          Upcoming
+        </button>
+        <button
+          id="recentBtn"
+          class="font-dm_sans text-[.9rem] tracking-[.8px] rounded-r-[.4rem] px-[.9rem] w-[8rem] border-[1px] border-primary h-[2.7rem] bg-gray-100 text-primary"
+        >
+          Recent
+        </button>
+      </div>
+      <!-- Swiper -->
+      <div
+        class="swiper xl:w-[80%] sm_tablet:w-[96%] md_phone:w-[23rem] w-[18rem] h-[27rem] mt-[2rem] mySwiper"
+      >
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination text-primary"></div>
+      </div>
+    </section>
+  </body>
+</html>
